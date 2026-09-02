@@ -496,3 +496,496 @@ main {
     }
 
 }
+
+.conteudo-materia {
+    max-width: 1100px;
+    margin: 45px auto;
+}
+
+.introducao-materia {
+    background: linear-gradient(135deg, #ffffff, #f4efff);
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #e2d7f5;
+    box-shadow: 0 8px 25px rgba(76, 48, 130, 0.08);
+    margin-bottom: 30px;
+}
+
+.introducao-materia h2 {
+    color: #6343ad;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.introducao-materia p {
+    color: #686172;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.blocos-conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.bloco-conteudo {
+    position: relative;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 20px;
+    border: 1px solid #e5dcf4;
+    box-shadow: 0 7px 20px rgba(76, 48, 130, 0.07);
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.bloco-conteudo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(#6c4bbd, #9a7ad8);
+}
+
+.bloco-conteudo:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 32px rgba(76, 48, 130, 0.15);
+    border-color: #cbb9ec;
+}
+
+.bloco-conteudo h3 {
+    color: #5f3dab;
+    font-size: 21px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+.bloco-conteudo h4 {
+    display: inline-block;
+    color: #ffffff;
+    background: #7450c9;
+    padding: 6px 11px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.bloco-conteudo p {
+    color: #686172;
+    line-height: 1.65;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.bloco-conteudo strong {
+    color: #5f3dab;
+    font-weight: bold;
+}
+
+.dicas-materia {
+    background: linear-gradient(135deg, #6343ad, #8b6bd1);
+    padding: 32px;
+    border-radius: 20px;
+    color: white;
+    margin: 30px 0;
+    box-shadow: 0 10px 25px rgba(76, 48, 130, 0.15);
+}
+
+.dicas-materia h2 {
+    color: white;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.dicas-materia p {
+    color: #f1ebff;
+    line-height: 1.7;
+    font-size: 15px;
+    margin-top: 7px;
+}
+
+.dicas-materia strong {
+    color: white;
+}
+
+.revisao {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #e4daf7;
+    box-shadow: 0 8px 22px rgba(76, 48, 130, 0.08);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.revisao h2 {
+    color: #6343ad;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.revisao > p {
+    color: #686172;
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.passos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    margin-top: 28px;
+}
+
+.passos div {
+    text-align: center;
+    transition: 0.3s;
+}
+
+.passos div:hover {
+    transform: translateY(-6px);
+}
+
+.passos span {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6c4bbd, #8b6bd1);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 5px 12px rgba(76, 48, 130, 0.18);
+}
+
+.passos p {
+    color: #6343ad;
+    font-weight: bold;
+    margin-top: 9px;
+}
+
+@media (max-width: 800px) {
+
+    .blocos-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .passos {
+        gap: 25px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .conteudo-materia {
+        margin: 30px auto;
+    }
+
+    .bloco-conteudo,
+    .introducao-materia,
+    .dicas-materia,
+    .revisao {
+        padding: 24px;
+    }
+
+    .passos {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
+
+a{
+    color: white;
+}
+
+
+.quiz-introducao {
+    background: linear-gradient(135deg, #ffffff, #f4efff);
+    padding: 32px;
+    border-radius: 20px;
+    border: 1px solid #e4daf7;
+    box-shadow: 0 8px 22px rgba(76, 48, 130, 0.08);
+    margin-bottom: 35px;
+}
+
+.quiz-introducao h2 {
+    color: #6343ad;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.quiz-introducao p {
+    color: #686172;
+    line-height: 1.7;
+    margin-top: 8px;
+}
+
+.grupo-quiz {
+    margin-bottom: 35px;
+}
+
+.grupo-quiz > h2 {
+    color: #6343ad;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.nivel-quiz {
+    text-align: center;
+    color: #8b6bd1;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.questao {
+    background: white;
+    padding: 28px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    border: 1px solid #e4daf7;
+    box-shadow: 0 7px 20px rgba(76, 48, 130, 0.07);
+    transition: 0.3s;
+}
+
+.questao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(76, 48, 130, 0.14);
+}
+
+.questao h3 {
+    color: #7450c9;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.questao > p {
+    color: #40394d;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.questao label {
+    display: block;
+    background: #f8f5ff;
+    border: 1px solid #e7def6;
+    padding: 12px 15px;
+    margin: 9px 0;
+    border-radius: 10px;
+    color: #575060;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.questao label:hover {
+    background: #eee7ff;
+    border-color: #c9b8ec;
+    transform: translateX(3px);
+}
+
+.questao input {
+    margin-right: 9px;
+    accent-color: #7450c9;
+}
+
+.botao-resultado,
+.botao-refazer {
+    display: block;
+    margin: 35px auto;
+    border: none;
+    border-radius: 25px;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #6343ad, #8b6bd1);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(76, 48, 130, 0.18);
+    transition: 0.3s;
+}
+
+.botao-resultado:hover,
+.botao-refazer:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 13px 25px rgba(76, 48, 130, 0.25);
+}
+
+.resultado {
+    background: linear-gradient(135deg, #ffffff, #f4efff);
+    padding: 45px 35px;
+    margin-top: 45px;
+    border-radius: 22px;
+    border: 1px solid #e2d7f5;
+    box-shadow: 0 12px 30px rgba(76, 48, 130, 0.12);
+    text-align: center;
+    animation: aparecer 0.6s ease;
+}
+
+.resultado > h2 {
+    color: #6343ad;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.resultado-numero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.resultado-numero strong {
+    color: #7450c9;
+    font-size: 52px;
+}
+
+.resultado-numero span {
+    color: #686172;
+    margin-top: 3px;
+}
+
+.nivel-resultado {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid #e4daf7;
+}
+
+.nivel-resultado p {
+    color: #686172;
+    margin-bottom: 8px;
+}
+
+.nivel-resultado h3 {
+    color: #6343ad;
+    font-size: 28px;
+}
+
+.mensagem-resultado {
+    max-width: 750px;
+    margin: 25px auto;
+}
+
+.mensagem-resultado p {
+    color: #686172;
+    line-height: 1.7;
+}
+
+.estudar-resultado {
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+.estudar-resultado h3 {
+    color: #6343ad;
+    margin-bottom: 15px;
+}
+
+#materias-fracas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.materia-fraca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border: 1px solid #e4daf7;
+    padding: 14px 17px;
+    border-radius: 12px;
+}
+
+.materia-fraca strong {
+    color: #6343ad;
+}
+
+.materia-fraca span {
+    color: #686172;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+
+    #materias-fracas {
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-introducao,
+    .resultado,
+    .questao {
+        padding: 24px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .resultado-numero strong {
+        font-size: 42px;
+    }
+
+    .nivel-resultado h3 {
+        font-size: 23px;
+    }
+
+    .questao label {
+        padding: 11px;
+    }
+
+}
+
+.ifc-destaque {
+    background: linear-gradient(135deg, #6343ad, #8b6bd1);
+    color: white;
+}
+
+.ifc-destaque h2,
+.ifc-destaque p {
+    color: white;
+}
+
+.conteudo-materia a {
+    color: #6343ad;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.conteudo-materia a:hover {
+    text-decoration: underline;
+}
+
+.bloco-conteudo h4 {
+    color: #f7f6fb;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.bloco-conteudo strong {
+    color: #6343ad;
+}
+
+@media (max-width: 800px) {
+
+    .blocos-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+}
+.dicas-materia a{
+    color: rgb(151, 151, 151);
+}
