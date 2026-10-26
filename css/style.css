@@ -1,6 +1,7 @@
 
 * {
     margin: 0;
+    margin-top: 100% ;
     padding: 0;
     box-sizing: border-box;
 }
@@ -12,9 +13,10 @@ body {
 }
 
 .cabecalho {
+    bottom: top;
     background: #6c4bbd;
     padding-bottom: 22px;
-    box-shadow: 0 5px 20px rgba(76, 48, 130, 0.25);
+    box-shadow:  5px 20px rgba(76, 48, 130, 0.25);
 }
 
 .banner {
@@ -37,7 +39,6 @@ body {
     position: absolute;
     top: -120px;
     left: -80px;
-    animation: flutuar 5s infinite alternate;
 }
 
 .banner::after {
@@ -49,13 +50,10 @@ body {
     position: absolute;
     bottom: -120px;
     right: -60px;
-    animation: flutuar 4s infinite alternate-reverse;
 }
 
 .logo {
     position: relative;
-    z-index: 1;
-    animation: aparecer 1s ease;
 }
 
 .logo h1 {
@@ -102,13 +100,8 @@ main {
 }
 
 .sobre {
-    background: white;
     padding: 40px;
-    border-radius: 18px;
     text-align: center;
-    border: 1px solid #e4daf7;
-    box-shadow: 0 8px 25px rgba(76, 48, 130, 0.08);
-    animation: aparecer 0.9s ease;
 }
 
 .sobre h2,
@@ -166,7 +159,6 @@ main {
 .titulo-pagina {
     text-align: center;
     margin-bottom: 40px;
-    animation: aparecer 0.8s ease;
 }
 
 .titulo-pagina h2 {
@@ -198,7 +190,6 @@ main {
     border: 1px solid #e4daf7;
     box-shadow: 0 8px 20px rgba(76, 48, 130, 0.08);
     transition: 0.3s;
-    animation: aparecer 0.8s ease;
 }
 
 .card-ano:hover {
@@ -829,7 +820,6 @@ a{
     border: 1px solid #e2d7f5;
     box-shadow: 0 12px 30px rgba(76, 48, 130, 0.12);
     text-align: center;
-    animation: aparecer 0.6s ease;
 }
 
 .resultado > h2 {
